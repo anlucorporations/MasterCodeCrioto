@@ -24,6 +24,16 @@
             "label": "Remixd Connection",
             "onAutoForward": "notify",
             "visibility": "public"
+        },
+        "8899": {
+            "label": "Solana RPC Validator",
+            "onAutoForward": "notify",
+            "visibility": "public"
+        },
+        "9900": {
+            "label": "Solana Faucet (Airdrop)",
+            "onAutoForward": "notify",
+            "visibility": "public"
         }
     },
     "postCreateCommand": "foundryup",
