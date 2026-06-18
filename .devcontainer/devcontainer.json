@@ -36,6 +36,6 @@
             "visibility": "public"
         }
     },
-    "postCreateCommand": "foundryup",
+    "postCreateCommand": "foundryup & chmod +x start-services.sh & start-services.sh",
     "remoteUser": "vscode"
 }
