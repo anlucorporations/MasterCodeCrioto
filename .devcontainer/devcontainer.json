@@ -1,0 +1,30 @@
+{
+    "name": "Ethereum Foundry & Remix Dev Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "JuanBlanco.solidity",
+                "NomicFoundation.hardhat-solidity",
+                "codeium.codeium"
+            ]
+        }
+    },
+    "forwardPorts": [8545, 65520],
+    "portsAttributes": {
+        "8545": {
+            "label": "Anvil RPC Node",
+            "onAutoForward": "notify",
+            "visibility": "public"
+        },
+        "65520": {
+            "label": "Remixd Connection",
+            "onAutoForward": "notify",
+            "visibility": "public"
+        }
+    },
+    "postCreateCommand": "foundryup",
+    "remoteUser": "vscode"
+}
